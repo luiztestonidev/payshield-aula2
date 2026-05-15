@@ -22,9 +22,9 @@ public class Main {
         pagamentos.add(pix);
         pagamentos.add(boleto);
 
-        for (MeioPagamento item : pagamentos) {
+        for (MeioPagamento itens : pagamentos) {
 
-            item.pagar(100);
+            itens.pagar(100);
 
         }
     }
