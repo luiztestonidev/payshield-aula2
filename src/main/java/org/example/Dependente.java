@@ -21,7 +21,7 @@ public class Dependente extends Beneficiario implements Cobertura {
     }
 
     @Override
-    public boolean possuiCobertura(TipoCobertura cobertura) {
+    public boolean temCoberturaPara(TipoCobertura cobertura) {
 
         switch (cobertura) {
 

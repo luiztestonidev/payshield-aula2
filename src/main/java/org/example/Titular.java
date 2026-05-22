@@ -38,7 +38,7 @@ public class Titular extends Beneficiario implements Cobertura {
     }
 
     @Override
-    public boolean possuiCobertura(TipoCobertura cobertura) {
+    public boolean temCoberturaPara(TipoCobertura cobertura) {
         return true;
     }
 

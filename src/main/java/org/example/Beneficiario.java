@@ -15,22 +15,6 @@ public abstract class Beneficiario {
         this.cpf = cpf;
     }
 
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
-
-    public String getNome() {
-        return nome;
-    }
-
-    public LocalDate getDataNascimento() {
-        return dataNascimento;
-    }
-
-    public String getCpf() {
-        return cpf;
-    }
-
     public int getIdade() {
         return Period.between(dataNascimento, LocalDate.now()).getYears();
     }
@@ -49,4 +33,21 @@ public abstract class Beneficiario {
     }
 
     public abstract double calcularMensalidade();
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public LocalDate getDataNascimento() {
+        return dataNascimento;
+    }
+
+    public String getCpf() {
+        return cpf;
+    }
+
 }

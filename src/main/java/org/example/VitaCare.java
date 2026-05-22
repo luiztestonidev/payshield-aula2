@@ -37,9 +37,9 @@ public class VitaCare {
 
         System.out.println("\n-COBERTURAS-");
 
-        System.out.println("Dependente possui internacao? " + dependente1.possuiCobertura(TipoCobertura.INTERNACAO));
-        System.out.println("Titular possui internacao? " + titular.possuiCobertura(TipoCobertura.INTERNACAO));
-        System.out.println("Aposentado possui consulta? " + aposentado.possuiCobertura(TipoCobertura.CONSULTA));
+        System.out.println("Dependente possui internacao? " + dependente1.temCoberturaPara(TipoCobertura.INTERNACAO));
+        System.out.println("Titular possui internacao? " + titular.temCoberturaPara(TipoCobertura.INTERNACAO));
+        System.out.println("Aposentado possui consulta? " + aposentado.temCoberturaPara(TipoCobertura.CONSULTA));
 
         System.out.println("\n-RESUMO CONTRATO-");
 
